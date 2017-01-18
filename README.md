@@ -3,7 +3,7 @@
 
 Note: this project is no longer in production and has been archived at https://raymondjohnson.us/projects/three-q-digital-2014/
 
-This custom theme provides front-end functionality for 3qdigital.com. Designs were provided by Andrew Rado.
+This custom theme provides front-end functionality for 3qdigital.com. Designs were provided by Andrew Rado - http://www.andrewrado.com/.
 
 The theme uses the following components:
 
