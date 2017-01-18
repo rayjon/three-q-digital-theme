@@ -1,0 +1,348 @@
+.who-we-are-hero {
+	background-image: url('images/banner-whoweare.png');
+	min-height: 440px;
+	margin-bottom: rem(40);
+}
+
+.bracket {
+	border-width: 1px 1px 1px 0;
+	border-color: #C8C8C8;
+	border-style: solid;
+	float: right;
+	margin:rem(-390) rem(-35) 0 0;
+	overflow: auto;
+	height: 360px;
+	width: 25px;
+}
+
+
+.learn-about-our-philosophy {
+	color: #7ea8ad;
+	text-transform: uppercase;	
+	padding: rem(170) 0 rem(165) rem(20);
+}
+
+.learn-about-our-philosophy a {
+	color: #7BA8AC;
+	font-size: rem(18);	
+	letter-spacing: -1px;
+}
+
+.learn-about-our-philosophy a:hover {
+	color: #f9b800;
+	text-decoration: none;
+}
+
+.learn-about-our-philosophy i {
+	color: #f9b800;
+	display: block;
+	float: left;
+	font-size: rem(25);
+	margin-right: rem(10);
+}
+
+.who-we-are-brand-icons h3 {
+	font-family: 'DINWeb-Light', sans-serif;
+	font-size: rem(34);
+	margin: 0 0 rem(40);
+	
+	@include media($mobile) {
+    	font-size: rem(20);
+    	margin-bottom: $base-spacing;
+	}
+}
+
+.who-we-are-brand-icons .large-icon {
+	text-align: right;
+	font-size: 100px;
+	margin-bottom: rem(30);
+}
+
+.who-we-are-brand-icons a {
+	text-decoration: none;
+}
+
+.who-we-are-brand-icons a:hover {
+	text-decoration: none;
+}
+
+.who-we-are-brand-icons a:hover i {
+	color: #49868D;	
+	text-decoration: none;
+}
+
+// Executive Leadership
+
+.exec-staff-grid {
+    font-size: 0;
+	list-style: none;
+	margin: rem(30) auto;
+	overflow: hidden;
+	text-align: center;
+}
+
+.exec-staff-grid li {
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    vertical-align: top;
+    width: 200px;
+    height: 200px;
+}
+
+.mobile-exec-staff-grid .staff-content {
+    display: none;
+}
+
+.mobile-exec-staff-grid li h3 {
+    @include media($mobile) {
+    		display: inline-block;
+    		font-size: rem(16);
+    		width: rem(160);
+    }
+}
+
+.mobile-exec-staff-grid li i {
+	color: #FBBC40;
+	float: right;
+	font-size: rem(25);
+	margin: rem(20) rem(10) 0 0;
+}
+
+.exec-staff-grid h3 {
+	line-height: rem(22);
+}
+
+.exec-staff-grid h3 a {
+	color: #4c4c4c;
+	font-size: rem(20);
+	font-family: 'DINWeb-Medium', sans-serif;
+	letter-spacing: -1px;
+	margin: rem(10) 0 rem(4);
+}
+
+.exec-staff-grid img {
+	width: 100%;	
+	height: 100%;
+}
+
+.exec-staff-grid span {
+	display: block;
+	font-size: rem(20);
+}
+
+.exec-staff-grid .staff-caption {
+	background: #FBBC40;
+	padding: rem(40) rem(10) rem(10);
+	position: absolute;
+		left: 0;
+		top: 0;
+	width: 200px;
+	height: 200px;
+	opacity: 0;
+}
+
+.staff-lightbox {
+	background: #F9B800;
+	padding: rem(20);
+}
+
+.staff-lightbox h2 {
+	font-family: 'DINWeb-Light', sans-serif;
+	font-size: rem(34);
+	margin: rem(25) 0 rem(10);
+}
+
+.staff-lightbox a {
+	color: #28464A;
+}
+
+.staff-lightbox a:hover {
+	color: #4C4C4C;	
+}
+
+.exec-staff-grid .staff-caption strong {
+	font-family: 'DINWeb-Bold', sans-serif;
+}
+
+.exec-staff-grid li:hover .staff-caption {
+	opacity: .9;
+}
+
+.center-grid {
+	text-align: center;
+}
+
+.center-grid li {
+	display: inline-block;
+	text-align: left;
+}
+
+div[id^="inline"] {
+	display: none;
+}
+
+.staff-grid {
+    font-size: 0;
+    line-height: $heading-line-height;
+    list-style: none;
+	margin: $base-spacing auto $base-spacing * 2;
+	overflow: hidden;
+	text-align: center;
+    
+    h3 {
+    	font-size: $base-font-size;
+    	font-family: $din-medium;
+    	margin: rem(8) 0 0;
+    	text-align: left;
+    }
+    
+    li {
+	    display: inline-block;
+        position: relative;
+        width: rem(150);
+        height: rem(150);
+    }
+    
+    li:hover .staff-caption {
+	    opacity: .94;
+    }
+
+    .job-title {
+        margin-bottom: $small-spacing;
+    }
+    
+    a {
+        font-family: $din-medium;
+        color: $smalt-blue;       
+                
+        &:visited {
+            color: $neptune;  
+        }
+        
+        &:hover {
+            color: $thunder;
+        }
+    }
+}
+
+.staff-grid span {
+	display: block;
+	font-size: rem(16);
+	text-align: left;
+}
+
+.staff-grid img {
+	height: 100%;
+	width: 100%;
+}
+
+@mixin staff-caption() {
+    background: $super-nova;
+	padding: rem(5);
+	position: absolute;
+		left: 0;
+		top: 0;
+	width: 150px;
+	height: 150px;
+	opacity: 0; 
+}
+
+.staff-grid .staff-caption {
+	@include staff-caption();
+}
+
+.staff-morale-associates {
+    margin: $base-spacing auto $base-spacing * 2;
+    
+    h1 {
+        font-size: rem(20);
+        font-family: 'DINWeb-Light', sans-serif;
+        color: #7BA8AC;
+        text-align: center;
+        
+        @include media($mobile-up){
+            font-size: rem(34);
+        }
+    }
+    
+    ul {
+        font-size: 0;
+        list-style: none;
+        overflow: hidden;
+        text-align: center;
+    }
+    
+    li {
+        display: inline-block;
+        position: relative;
+        width: 150px;
+        height: 150px;  
+    }
+    
+    h3 {
+        font-size: rem(16);
+        font-family: 'DINWeb-Medium', sans-serif;
+        margin-top: rem(8);
+        text-align: left;
+    }
+    
+    p {
+        display: block;
+        font-size: rem(16);
+        text-align: left;
+    }
+    
+    .staff-info {
+        @include staff-caption();
+        
+        &:hover {
+            opacity: 9;
+        }
+    }
+}
+
+.philosophy-anchor {
+	position: relative;
+	top: -200px;
+	float: left;
+}
+
+.core-values {
+	font-size: rem(20);
+	margin: rem(50) 0 0;
+	overflow: hidden;
+}
+
+.core-values .large-icon {
+	font-size: rem(200);
+	margin-bottom: rem(60);
+	text-align: left;
+	
+	@include media($mobile) {
+    	font-size: rem(100);
+    	display: inline-block;
+    	margin-bottom: rem(20);
+	}
+}
+
+.core-values h3 {
+	font-size: rem(44);
+	margin: rem(20) 0 rem(10);
+	
+	@include media($mobile) {
+    	display: inline-block;
+    	font-size: rem(20);
+    	max-width: rem(140);
+    	vertical-align: top;
+    	margin: rem(30) 0 0 rem(10);
+	}
+}
+
+#EQ, 
+#IQ,
+#XQ {
+	margin-top: -150px;
+	padding-bottom: 150px;
+	display: block;
+}

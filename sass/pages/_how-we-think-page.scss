@@ -1,0 +1,126 @@
+.media-hero {
+	background-image: url('images/banner-howwethink.png');
+	min-height: 440px;	
+}
+
+.media-hero h3 {
+	margin-bottom: 5rem;
+	
+	@include media($mobile) {
+    	margin-bottom: rem(20);
+	}
+}
+
+.page-seperator {
+	background-color: #f9b800; 
+	padding: rem(25) 0;
+	margin: 0 0 6rem;
+	overflow: hidden;
+}
+
+.page-seperator h2 {
+	color: white;
+    line-height: 100px;
+    font-family: $din-regular;
+    letter-spacing: rem(2.5);
+    font-size: rem(34);
+    margin: 0;
+    text-transform: uppercase;
+    overflow: auto;
+    display: inline-block;
+    
+    @include media($mobile) {
+    	font-size: rem(20);
+    	line-height: 1.2;
+    	margin-top: rem(15);
+	}
+    
+    a:hover {
+	    text-decoration: none;
+	}
+}
+ 
+.page-seperator [class^="three-q-icon-"] {
+	color: white;
+    font-size: rem(50);
+    margin-right: rem(10);
+    line-height: rem(50);
+    width: rem(50);
+	
+	@include media($mobile-up) {
+    	font-size: rem(100);
+        line-height: rem(100);
+        margin-right: rem(20);
+        width: rem(100);
+    }
+}
+
+.page-seperator a.button-slate {
+	float: right;
+	margin: 1.5rem 0 0;
+}
+
+.page-seperator img {
+	margin-right: 1.6rem;
+	width: rem(100);
+	height: rem(100);
+}
+
+@media only screen and (max-width: 568px), only screen and (max-device-width: 568px) {
+	.page-seperator img {
+		width: 5rem;
+		height: 5rem;
+	}
+}
+
+.how-we-think-nav {
+	list-style: none; 
+}
+
+.how-we-think-nav li {
+	display: inline-block;
+	margin: 0 $base-spacing 0 0;
+}
+
+.how-we-think-nav li:last {
+	margin: 0;
+}
+
+.section-title {
+	font-family: "DINWeb-Medium", sans-serif;
+}
+
+.icon {
+	fill: #FBBC40;
+	float: left;
+	margin: 0 rem(10) rem(20) 0;
+}
+
+ul.large {
+    @include media($medium-screen) {
+    	font-size: rem(20); 
+    	list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+	}
+    
+    li {
+        margin-bottom: $base-spacing * .75;	
+    }
+    
+    a {
+	    background-image: url('images/link-outbound-icon.svg');
+        background-repeat: no-repeat;
+        padding-left: $base-spacing * 1.25;  
+        color: inherit;
+        display: block;
+	    
+	    &:hover {
+            color: $super-nova;
+	    }
+    }
+
+    img {
+	    padding: rem(5) 0 0 rem(35);
+    }
+}

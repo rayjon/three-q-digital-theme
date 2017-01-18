@@ -1,0 +1,174 @@
+.sidebar a.social-icon i {
+	background: #EFEFEF;
+	color: #48858B;
+}
+
+a.social-icon:hover i,
+.sidebar a.social-icon:hover i {
+	background: #f9b800;
+	color: white;
+	text-decoration: none;
+}
+
+.sidebar h1 {
+	border-bottom: 1px solid #DDD;
+	margin-bottom: 1rem;
+	padding-bottom: .5rem;
+}
+
+/* =Sidebar
+----------------------------------------------- */
+/*
+.sidebar {
+	margin-top: 6rem;
+}
+*/
+
+.single-post .sidebar {
+	margin: 0;
+}
+
+.page-id-752 .sidebar {
+	margin-top: 0;
+}
+
+.single-services .sidebar {
+	margin: 0;
+}
+
+h1.widget-title {
+	display: none;
+}
+
+h3.widget-title {
+	color: #7ea8ad;
+	border-bottom: 1px solid #DDD;
+	font-family: 'DINWeb-Regular',sans-serif;
+	font-size: rem(20);
+	letter-spacing: -.1rem;
+	padding-bottom: .5rem;
+	margin-bottom: 1.6rem;
+	text-transform: none;
+}
+
+.sidebar #mc_embed_signup {
+	background: #efefef;
+	padding: rem(20);
+}
+
+.sidebar #mc_embed_signup  p {
+	font-family: 'DINWeb-Light',sans-serif;
+	font-size: rem(20);
+	margin-bottom: rem(20);
+}
+
+/* =Widgets
+----------------------------------------------- */
+
+.widget {
+	margin: 0 0 2.5em;
+}
+
+/* Make sure select elements fit in widgets */
+.widget select {
+	max-width: 100%;
+}
+
+/* Search widget */
+.widget_search .search-submit {
+	display: none;
+}
+
+.page-template-blog-page-php #search-2 {
+	display: none;
+}
+
+/* Sidebar Whitepaper Download Form */
+
+.sidebar .three-q-form{
+	margin: 0 0 6rem;
+}
+
+.sidebar form p {
+    font-size: rem(16);
+    margin-bottom: $small-spacing;
+}
+
+.sidebar .three-q-form h3,
+.sidebar .three-q-form h4,
+.sidebar .whitepaper-download-form h3,
+.sidebar .whitepaper-download-form h4,
+.sidebar .contact-form h3,
+.sidebar .contact-form h4 {
+	font-family: 'DINWeb-Regular', sans-serif;
+	font-size: rem(20);
+}
+
+.sidebar {
+    #{$all-text-inputs},
+    select[multiple=multiple],
+    textarea {
+    	font-size: rem(16);
+    	line-height: rem(24);
+    	//height: rem(40);
+    }
+}
+
+.sidebar .three-q-form h3,
+.sidebar .whitepaper-download-form h3,
+.sidebar .contact-form h3 {
+	height: rem(50);
+    line-height: rem(54);
+}
+
+.sidebar .whitepaper-download-form label, 
+.sidebar .contact-form label, 
+.sidebar .three-q-form label {
+    font-size: rem(16);
+}
+
+.sidebar .single-whitepaper h3 {
+	height: auto;
+	line-height: 2.4rem;
+	padding: 1rem 2rem;
+}
+
+.sidebar .three-q-form h3 img,
+.sidebar .whitepaper-download-form h3 img,
+.sidebar .contact-form h3 img {
+	height: rem(50);
+}
+
+.sidebar .single-whitepaper select#Whitepaper__c {
+	display: none;
+}
+
+.sidebar .three-q-form [type="submit"],
+.sidebar .whitepaper-download-form [type="submit"],
+.sidebar .contact-form [type="submit"] {
+	font-size: rem(14);
+	padding: rem(10) rem(15) rem(8);
+	margin-top: $base-spacing;
+}
+
+.sidebar .search-form label {
+    display: inline-block;
+    float: left;
+    width: 80%;
+    
+    input {
+        height: 50px;
+    }
+}
+
+/* Categories Widget */
+.blog-categories .children {
+    margin-left: $base-spacing;
+}
+
+/* Newsletter Subscripton Form */
+.sidebar .newsletter-subscription-form {
+    background: $zircon;
+    margin: 0 0 $base-spacing * 2;
+    padding: $base-spacing;
+}

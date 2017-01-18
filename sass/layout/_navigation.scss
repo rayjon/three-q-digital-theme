@@ -1,0 +1,259 @@
+/* =Menu
+----------------------------------------------- */
+.main-navigation {
+	background: #F9B800;
+    margin: 75px 0 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    right: 0;
+	
+	@include media($tablet-up) {
+    	clear: right;
+    	background: none;
+        display: block;
+        font-family: 'DINWeb-Regular', sans-serif;
+        height: rem(60);
+        margin: 0;
+        padding-top: rem(21);
+        position: relative;
+        text-align: right;
+    }
+		
+}
+
+.main-navigation ul {		
+	display: none;
+    padding: rem(12) rem(10);
+	
+	@include media($tablet-up) {
+    	display: inline-block;
+    	list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.main-navigation li {
+	float: left;
+	padding-bottom: rem(10);
+	position: relative;
+	text-align: left;
+	
+	@include media($tablet) {
+        display: block;
+        float: none;
+        padding: 0;
+    }
+}
+
+.main-navigation a {
+	color: #C8C8C8;
+	display: block;
+	font-family: 'DINWeb-Medium', sans-serif;
+	font-size: rem(14);
+	letter-spacing: 1px;
+	line-height: rem(40);
+	text-decoration: none;
+	padding: 0 rem(12.5);
+	text-transform: uppercase;
+	transition: none;
+	
+	@include media($tablet) {
+	    color: #4c4c4c;
+        padding: 0;
+        
+        &:hover {
+            color: white;
+        }
+    }
+}
+
+.main-navigation ul ul {
+	background: #f9b800;
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	display: none;
+	float: left;
+	position: absolute;
+		top: rem(40);
+		left: 0;
+	z-index: 99999;
+	
+	@include media($tablet) { 
+    	display: none;
+		padding: 0;
+    }
+}
+
+.main-navigation ul ul ul {
+	left: 100%;
+	top: 0;
+}
+
+.main-navigation ul ul a {
+	color: #4C4C4C;
+	line-height: 1.5;
+	width: 200px;
+	padding: rem(7) rem(12.5);
+}
+
+.main-navigation ul ul li {
+	padding-bottom: 0;
+	
+	@include media($tablet) {
+		display: none;
+		padding: 0;
+	}
+}
+
+.main-navigation li.sub-menu-parent:hover > a {
+	background: #f9b800;
+	color: white;
+}
+
+.main-navigation li:hover > a {
+	color: #f9b800;
+	
+	@include media($tablet) {
+    	display: block;
+		float: none;
+		padding: 0;
+    }
+}
+
+.main-navigation ul ul :hover > a {
+	color: white;
+}
+
+.main-navigation ul li:hover > ul {
+	display: block;
+}
+ 
+.main-navigation li.current_page_item a,
+.main-navigation li.current-menu-item a {
+	color: white;
+	
+	@include media($mobile) {
+    	color: white;
+	}
+}
+
+.main-navigation li.current_page_item ul a,
+.main-navigation li.current-menu-item ul a {
+	color: #4C4C4C;
+}
+
+.main-navigation li.current_page_item:hover a,
+.main-navigation li.current_page_item:hover ul li.current-menu-item a,
+.main-navigation li.current-menu-parent:hover ul li.current-menu-item a,
+.main-navigation ul li.current_page_item:hover li a:hover,
+.main-navigation ul li.current-menu-item:hover li a:hover {
+	color: white;
+}
+
+.main-navigation ul li.current_page_item:hover li a,
+.main-navigation ul li.current-menu-item:hover li a {
+	color: #4C4C4C;
+}
+
+.home .hide-on-home {
+	display: none;
+}
+
+/* Archive Page Navigation */
+.wp-pagenavi {
+	font-family: 'DINWeb-Medium', sans-serif;
+    margin-bottom: $base-spacing;
+}
+
+.wp-pagenavi .current {
+	background: $super-nova;
+	color: white;
+	display: inline-block;
+	margin: 0 $small-spacing 0 0;
+	padding: rem(6) rem(12) rem(5);
+	text-align: center;
+}
+
+.wp-pagenavi .last {
+	padding: 0 rem(5);
+}
+
+.wp-pagenavi a {
+	color: #76777B;
+	display: inline-block;
+	margin: 0 $small-spacing 0 0;
+	padding: 0 rem(5);
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.wp-pagenavi a:hover {
+	color: $action-color-alt;
+	text-decoration: none;
+}
+
+.site-content [class*="navigation"] {
+	margin: rem(10) 0 rem(40);
+	overflow: hidden;
+	font-size: rem(14);
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+[class*="navigation"] .nav-previous {
+	float: left;
+	width: 50%;
+}
+[class*="navigation"] .nav-next {
+	float: right;
+	text-align: right;
+	width: 50%;
+}
+
+/* Mobile Menu */
+#site-navigation {
+    .menu-arrow {
+        @include media($tablet) {
+    		color: #F9B800;
+    		display: none;
+    		font-size: 30px;
+    		position: absolute;
+    		right: 31px;
+    		top: -20px;
+        }
+	}
+    
+    .menu-top-level-container {
+        @include media($tablet) {
+		    box-shadow: 0 5px 10px rgba(0,0,0,.3);
+        }
+    }
+}
+
+.menu-toggle {
+	display: none;
+	cursor: pointer;
+}
+
+h1.menu-toggle {
+	clear: none;
+	color: white;
+	margin-top: rem(15);
+	text-transform: uppercase;
+	float: right;
+	float: none;
+	position: absolute;
+	right: 22px;
+	
+	@include media($tablet) {
+    	margin-top: rem(10);
+	}
+}
+
+.menu-toggle,
+.main-navigation.toggled .nav-menu {
+    @include media($tablet) { 
+		display: block;
+    }
+}

@@ -1,0 +1,25 @@
+.contact-logo {
+	margin: -30px 12px 0 0;
+	width: 100px;
+	height: 100px;
+}
+
+.three-q-location {
+    font-size: rem(13);
+	
+	h3 {
+	    font-size: rem(16);
+        margin: 0;
+        font-family: 'DINWeb-Medium', sans-serif;
+    }
+
+    p {
+	    font-size: rem(16);
+        margin: 0;
+    }
+
+	img {
+	    width: 66%;
+        margin: 0 $small-spacing 0 0;
+    }
+}

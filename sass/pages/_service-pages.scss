@@ -1,0 +1,102 @@
+.mobile-service-badges {
+    margin: $base-spacing * 2 0;
+    
+    .badge {
+        margin-bottom: $base-spacing;
+        height: 100px; 
+
+        @include media($mobile-up) {
+            @include span-columns(6);
+            margin: 0;
+        }
+        
+        img {
+            max-height: 100%;
+        }
+    }
+}
+
+.single-services .title-banner h1 {
+	padding: 0;
+	line-height: rem(105);
+	margin: 0;
+	overflow: auto;
+}
+
+.image-gallery {
+	max-width: 600px;
+	margin: 0 0 6rem;
+	overflow: auto;	
+}
+
+.image-gallery ul {
+    list-style: none; 
+    margin: 0;   
+}
+
+.image-gallery h3 {
+	background: #FBBC40;
+	font-size: 2rem;
+	margin: 0;
+	padding: 1.25rem 0 1.25rem 2rem;
+	text-transform: none;
+}
+
+.image-gallery a.lightbox {
+	display: block;
+	float: left;
+	overflow: auto;
+}
+
+.image-gallery a.lightbox:hover img {
+	opacity: .75;
+}
+
+.image-gallery .icon {
+	float: right;
+	margin: 0 1rem 0 0;
+}
+
+.image-gallery .icon path {
+	fill: white;
+}
+
+.image-gallery .icon:hover path {
+	fill: #4c4c4c;
+}
+
+body .fancybox-opened .fancybox-skin {
+	box-shadow: none;
+}
+
+body .fancybox-skin {
+	background: none;
+}
+
+body .fancybox-close {
+	top: -15px;
+	right: -15px;
+}
+
+body .fancybox-title-float-wrap .child {
+	margin-right: -100%;
+	padding: 2px 20px;
+	background: none;
+	border-radius: 0;
+	font-size: 2.2rem;
+	text-shadow: none;
+	line-height: 24px;
+	white-space: nowrap;
+	text-transform: uppercase;
+}
+
+body .fancybox-title-float-wrap {
+	right: 23%;
+	text-align: left;
+}
+
+body .fancybox-title-float-wrap {
+	right: 0;
+	left: 0;
+	padding: 0;
+}

@@ -1,0 +1,280 @@
+
+.footer-call-to-action {
+	background: #28464a;
+	overflow: hidden;
+	padding: 3rem 0px;
+}
+
+#page .footer-call-to-action h2,
+#content .footer-call-to-action h2 {
+	color: white;
+	font-size: rem(30);
+	font-family: 'DINWeb-Light', sans-serif;
+	text-transform: none;
+	line-height: rem(67);
+	margin: 0;
+}
+
+footer#colophon {
+	background: #EFEFEF;
+	border-top: rem(75) solid #f9b800;
+	padding-bottom: 3.5rem;
+	
+	@include media($mobile) {
+		width: 100%;
+	}
+}
+
+footer#colophon .wrap {
+	overflow: visible;
+}
+
+.site-footer .mobile-header {
+    background: $super-nova;
+    margin-bottom: $base-spacing;
+    
+    @include media($mobile-up) {
+        display: none;
+    }
+    
+    h2 {
+        display: block;
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+/*** Footer Menu ***/
+
+footer#colophon ul.menu {
+	list-style: none;
+	margin: 0;
+}
+
+footer#colophon ul.menu li {
+	display: inline-block;
+}
+
+footer#colophon ul.menu li a,
+footer#colophon ul.menu li a:visited {
+	color: #75A5A7;
+	font-size: rem(14);
+	font-family: 'DINWeb-Medium', sans-serif;
+	margin-right: rem(13);
+}
+
+footer#colophon ul.menu li a:hover {
+	color: #F6AA08;
+}
+
+
+.site-footer h2 {
+	background: $super-nova;
+	color: #4c4c4c;
+	display: none;
+    font-family: 'DINWeb-Medium',sans-serif;
+	font-size: rem(18);
+    margin: 0 0 rem(20) 0;
+    padding: rem(20);
+    
+	@include media($mobile-up) {
+    	display: block;
+    	margin: rem(-47) 0 rem(50);
+    	padding: 0;
+    	text-transform: uppercase;
+	}		
+}
+
+footer#colophon h3 {
+	font-family: 'DINWeb-Medium',sans-serif;
+	font-size: rem(16);
+	margin: 0;
+}
+
+footer#colophon p {
+	font-family: 'DINWeb-Light', sans-serif;
+	font-size: rem(16);
+}
+
+/* Act-On Newsletter Subscription Form */
+.newsletter-subscription-form {
+    clear: both;
+    margin: $base-spacing * 2 0;
+    font-size: rem(16);
+    
+    h1 {
+        font-size: rem(18);
+        margin-bottom: $base-spacing;
+        leter-spacing: normal;
+        line-height: 1.5;
+        
+        @include media($mobile-up) {
+            //font-size: rem(20);
+        }
+    }
+    
+    label {
+        font-family: $din-medium;
+        font-size: rem(16);
+        text-transform: uppercase;
+    }
+    
+    input[type="button"] {
+        background-color: $thunder;
+        text-transform: uppercase;
+        margin: $base-spacing 0;
+        
+        &:hover {
+            background-color: $super-nova;
+        }
+    }
+}
+
+
+/*-- MailChimp Embed Forms --*/
+#content #mc_embed_signup form,
+footer#colophon #mc_embed_signup form {
+	padding: 0;
+}
+
+#content .hero-banner #mc_embed_signup {
+	background-color:rgba(0,0,0,.2);
+	padding: rem(10);	
+}
+
+#content .hero-banner #mc_embed_signup form p {
+	color: #9DB9BA;
+}
+
+#content #mc_embed_signup label,
+footer#colophon #mc_embed_signup label {
+	font-family: 'DINWeb-Light', sans-serif;
+	font-weight: normal;
+	font-size: rem(20);
+	line-height: 1.2;
+}
+
+#content #mc_embed_signup input.email,
+footer#colophon #mc_embed_signup input.email {
+	border-color: #c8c8c8;
+	border-radius: 0;
+	display: inline-block;
+	height: rem(43);
+	margin-right: 1%;
+}
+
+#content #mc_embed_signup input.button,
+footer#colophon #mc_embed_signup input.button {
+	background-color: #4C4C4C;
+	border-radius: 0;
+	box-shadow: none;
+	display: inline-block;
+	font-family: "DINWeb-Medium", sans-serif;
+	font-size: rem(14);
+	font-weight: normal;
+	height: 42px;
+	text-transform: uppercase;
+}
+
+#content .media-hero #mc_embed_signup input.button {
+	background: #27494B;
+	color: #fb9e00;
+}
+
+#content #mc_embed_signup input.button:hover,
+footer#colophon #mc_embed_signup input.button:hover {
+	color: #f9b800;
+}
+/*-- End Mail Chimp Embed Forms --*/
+
+a.social-icon {
+	display: inline-block;
+	margin: 0 .5rem 0;
+	width: rem(50);
+	height: rem(50);
+}
+
+a.social-icon:hover {
+	text-decoration: none;
+}
+
+a.social-icon i {
+	background: #79A9AD;
+	border-radius: 50%;
+	color: white;
+	display: block;
+	font-size: rem(20);
+	min-width: 50px; 
+	padding: 1rem;
+	height: 3rem;
+	text-align: center;
+	transition: .15s all ease-in;
+}
+
+a.pinterest i {
+	font-size: 2.25rem;
+}
+
+.site-footer {
+    .mobile-marketing-badge {
+        margin: $base-spacing 0;
+        text-align: center;
+        @include span-columns(6);
+    
+        img {
+           // height: 100px;
+        }
+    }
+    
+    .doubleclick-html5-badge {
+        margin: $small-spacing 0;
+        @include span-columns(6);
+        img {
+          //  height: rem(100);
+        } 
+    }
+}
+
+footer#colophon .grid-33 {
+	
+	@include media($mobile-up) {
+	    padding-right: rem(30);
+	}
+}
+
+footer#colophon ul#menu-footer {
+	list-style: none;
+	margin: 0;
+}
+
+footer#colophon ul#menu-footer li {
+	display: inline-block;
+}
+
+footer#colophon ul#menu-footer li a {
+	color: #75A5A7;
+	font-size: rem(14);
+	font-family: 'DINWeb-Medium', sans-serif;
+	margin-right: rem(10);
+
+}
+
+footer#colophon .copyright {
+	font-size: rem(14);
+	margin-top: .4rem;
+}
+
+footer#colophon .copyright br {
+	display: none;
+}
+
+footer#colophon .copyright a {
+	color: #4C4C4C;
+	font-family: 'DINWeb-Regular', sans-serif;
+	text-decoration: underline;
+}
+
+footer#colophon .copyright a:hover {
+	text-decoration: none;
+}

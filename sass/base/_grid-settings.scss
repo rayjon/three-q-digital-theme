@@ -1,0 +1,17 @@
+@import "../vendor/neat/neat-helpers"; // or "../neat/neat-helpers" when not in Rails
+
+// Neat Overrides
+$column: 74px;
+$gutter: 20px;
+$grid-columns: 12;
+$max-width: 1150px;
+
+// Neat Breakpoints
+$medium-screen: rem(680);
+$large-screen: rem(768);
+
+$mobile: new-breakpoint(max-width $medium-screen 4);
+$tablet: new-breakpoint(max-width $large-screen 8);
+
+$mobile-up: new-breakpoint(min-width $medium-screen 12);
+$tablet-up: new-breakpoint(min-width $large-screen 12);

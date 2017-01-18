@@ -1,0 +1,63 @@
+/* =Structure/Scaffolding
+-------------------------------------------------------------- */
+html {
+}
+
+#page {
+
+}
+
+body {  
+    @include media($mobile) {
+        overflow: auto;
+        min-width: inherit;
+    }
+}
+
+
+.wrap {
+    @include outer-container;
+    
+    width: 100%;
+    margin: 0 auto;
+    //min-width: 320px;
+    overflow: hidden;
+    padding: 0 $base-spacing;
+	
+	@include media($medium-screen) {
+    	padding: 0 $base-spacing;
+        //width: 1150px;
+	}
+}
+
+#main {
+	margin-bottom: rem(100);
+	
+	@include media($mobile) {
+	    margin-bottom: rem(40); 
+    }
+}
+
+#content {
+    @include media($mobile) {
+        width: 100%;
+    }
+}
+
+.content-area {
+	//@include clearfix;
+	margin: auto;
+	width: 100%;
+	
+	@include media($mobile) {
+		margin-bottom: 0;
+	}
+}
+
+.sidebar {
+	margin: 20px auto;
+	padding: 0;
+	width: 100%;
+}
+
+

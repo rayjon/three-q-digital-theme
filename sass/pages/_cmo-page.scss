@@ -1,0 +1,161 @@
+/* Site Header */
+.page-cmo {
+    
+    .site-header {
+        background: $thunder;
+    }
+    
+    .site-branding a {
+        background-image: url("images/3qhh-logo-white.svg");
+    }
+
+    .main-navigation > div > ul > li > a {
+        color: white;
+        
+        &:hover {
+            color: $super-nova;
+        }
+    }
+    
+    .main-navigation li.menu-item-has-children a:hover {
+        color: white;
+    }
+}
+
+/* Page Sub-header */
+.cmo-header {
+    background: $thunder;
+    padding: 50px 0;
+    
+    /* Secondary Navigation */
+    nav {
+        font-family: $din-medium;
+        @include media($mobile) { // As defined in _grid-settings.scss
+            @include span-columns(4);
+        }   
+        @include span-columns(7);
+    }
+    
+    nav ul {
+        list-style: none;
+        margin: 0;
+    }
+    
+    nav li {
+        float: left;
+        padding-right: 2rem;
+        position: relative;
+    }
+    
+    nav a {
+        display: block;
+        color: $super-nova;
+        line-height: 50px;
+        text-transform: uppercase;
+        letter-spacing: rem(1);
+        
+        &:hover {
+            color: white; 
+        }
+    }
+    
+    /* Search Form */
+    form {
+        @include span-columns(5);
+        margin-top: 7px;
+        text-align: right;
+        
+        @include media($mobile) { // As defined in _grid-settings.scss
+            @include span-columns(4);
+        }
+    }
+    
+    label {
+        display: inline-block;
+        width: 80%;
+    }
+    
+    input[type="search"] {
+        width: 95%;
+    }
+    
+    button {
+        background: white;
+        margin-left: 0;
+        padding-left: 16px;
+        width: 50px;
+        height: 50px;
+        
+        &:hover {
+            background: $super-nova;
+        }
+    }
+    
+    i {
+        color: $super-nova;
+    }
+}
+
+.page-cmo {
+    .anchor {
+    
+        padding-bottom: 178px;
+        margin-top: -178px;
+    }
+}
+
+/* Apply this changes globaly later */
+.page-cmo .page-seperator [class^="three-q-icon-"]{
+    //float: none;
+    //display: inline-block;
+}
+
+.page-cmo .page-seperator h1 {
+    color: white;
+    display: table-cell;
+    height: 50px;
+    margin: 0;
+    padding-top: 5px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    
+    @include media($mobile-up) {
+        height: 100px;
+    }
+    
+}
+
+/* Sections */
+.page-cmo .white-papers {
+    margin-bottom: 100px;
+    
+    h2 {
+        font-size: modular-scale(1);
+        
+        @include media($tablet-up) {
+            font-size: modular-scale(2);
+        }
+    }
+}
+
+.page-cmo .webinars {    
+    margin-bottom: 100px;
+    
+    h2 {
+        font-size: modular-scale(1);
+        
+        @include media($tablet-up) {
+            font-size: modular-scale(2);
+        }
+    }
+
+}
+
+.page-cmo .cmo-blog-posts {
+    margin-bottom: 100px;
+}
+
+.page-cmo .cmo-interviews {
+    margin-bottom: 100px;
+}
+

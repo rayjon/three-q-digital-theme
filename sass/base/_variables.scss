@@ -1,0 +1,100 @@
+@font-face {
+	font-family: DINWeb-Light;	
+	src: url("fonts/DINWeb-Light.eot");
+	src: url("fonts/DINWeb-Light.woff") format("woff");
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: DINWeb-Regular;
+	src: url('fonts/DINWeb.eot');
+	src: url('fonts/DINWeb.eot?') format('eot');
+	src: url('fonts/DINWeb.woff') format('woff');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: DINWeb-Medium;
+	src: url("fonts/DINWeb-Medium.eot");
+	src: url("fonts/DINWeb-Medium.woff") format("woff");
+}
+
+@font-face {
+	font-family: DINWeb-Bold;
+	src: url('fonts/DINWeb-Bold.eot');
+	src: url('fonts/DINWeb-Bold.eot?') format('eot');
+	src: url('fonts/DINWeb-Bold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'three-q-digital-icons';
+	src:url('fonts/three-q-digital-icons.eot');
+	src:url('fonts/three-q-digital-icons.eot?#iefix') format('embedded-opentype'),
+		url('fonts/three-q-digital-icons.woff') format('woff'),
+		url('fonts/three-q-digital-icons.ttf') format('truetype'),
+		url('fonts/three-q-digital-icons.svg#three-q-digital-icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+$din-light: DINWeb-Light, sans-serif;
+$din-regular: DINWeb-Regular, sans-serif;
+$din-medium: DINWeb-Medium, sans-serif;
+
+// Typography
+$base-font-family: 'DINWeb-Regular', sans-serif;
+$heading-font-family: 'DINWeb-Regular', sans-serif;
+
+$h1: modular-scale(3);
+$h2: modular-scale(2);
+$h3: modular-scale(1);
+$h4: modular-scale(0);
+
+//$em-base: 18px;
+
+// Font Sizes
+$base-font-size: 18px;
+$mobile-font-size: 16px;
+$tablet-font-size: 16px;
+
+$modular-scale-ratio: $minor-third;
+$modular-scale-base: 1.2em;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.25;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: $base-line-height * 1rem;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Colors
+$blue: #477dca;
+$dark-gray: #333;
+$medium-gray: #999;
+$light-gray: #ddd;
+$pumice: #C8C8C8;
+$thunder: #4C4C4C;
+$super-nova: #FCB63E;
+$galliano: #E4AE00; /* darker gold for text links */
+$zircon: #E1E4E4;
+$green-vouge: #254649; /* dark teal */
+$smalt-blue: #4D868E;
+$neptune: #79A9AD;
+
+// Font Colors
+$base-background-color: #fff;
+$base-font-color: $thunder;
+$action-color: $super-nova;
+$action-color-alt: $galliano;
+$action-color-2: $neptune;
+
+// Border
+$base-border-color: $pumice;
+$base-border: 1px solid $base-border-color;
+
+// Forms
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);

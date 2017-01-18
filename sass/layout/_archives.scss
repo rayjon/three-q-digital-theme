@@ -1,0 +1,67 @@
+.archive {
+    .site-content {
+	    margin-top: $base-spacing * 6;
+    }
+    
+    .content-area {
+        @include media($medium-screen) {
+            @include span-columns(7); 
+        }
+    }
+    
+    .sidebar {
+        @include media($medium-screen) {
+            @include span-columns(4.5);
+            @include shift(.5);
+        }
+    }
+}
+
+.category {
+    .site-content {
+        margin-top: rem(100);
+        
+        @include media($medium-screen) {
+            margin-top: rem(120);
+        }
+    }
+    
+    .content-area,
+    .sidebar {
+        margin-top: $base-spacing * 2;
+    }
+}
+
+.category-banner {
+    background: $neptune;
+    color: white;
+    padding: $base-spacing 0;
+    
+    @include media($medium-screen) {
+        padding: $base-spacing 0;
+    }
+    
+    h1 {
+        color: white;
+        font-size: $h3;
+        @include media($medium-screen) {
+            margin: 0;
+        }
+    }
+    
+    .message {
+        @include media($medium-screen) {
+            @include span-columns(7.55); 
+        }
+    }
+    
+    .link {
+        @include media($medium-screen) {
+            @include span-columns(4.45);
+            text-align: left;
+            position: relative;
+        //top: 50%;
+        //transform: translateY(-50%);
+        }
+    }
+}

@@ -1,0 +1,121 @@
+.site-header {
+	background: #28464A;
+	padding: 20px 0;
+	position: fixed;
+	transition: all .25s ease-in;
+	width: 100%;
+	z-index: 10;
+}
+
+.page-template-what-we-do-page-php #masthead,
+.page-template-how-we-think-page-php #masthead,
+.page-template-who-we-are-page-php #masthead,
+.page-template-full-width-page-php #masthead,
+.home #masthead {
+	background: transparent;
+}
+
+#masthead .wrap {
+	margin: 0 auto;
+	overflow: visible;
+}
+
+.site-branding {
+	float: left;
+}
+
+.site-branding a {
+	background: url('images/3qhh-logo.svg') no-repeat left center;
+	background-size: 160px 60px;
+	display: block;
+	margin: 0;
+	padding: 30px 100px;
+	
+	@include media($mobile-up) {
+    	background-size: 200px 80px;
+    	padding: 40px 100px;
+	}
+}
+
+/*Blog Header*/
+body.archive #masthead,
+body.single-post #masthead,
+body.page-id-752 #masthead,
+body.search #masthead {
+	background-color: #f9b800;
+}
+
+body.archive #masthead .site-branding a,
+body.single-post #masthead .site-branding a,
+body.page-id-752 #masthead .site-branding a,
+body.search #masthead .site-branding a {
+	background-image: url("images/3qhh-logo-white.svg");
+}
+
+body.archive .main-navigation a,
+body.single-post .main-navigation a,
+body.page-id-752 .main-navigation a,
+body.search .main-navigation a  {
+	color: #4C4C4C;
+}
+
+body.archive .main-navigation a:hover,
+body.single-post .main-navigation a:hover,
+body.page-id-752 .main-navigation a:hover,
+body.search .main-navigation a:hover {
+	color: white;
+}
+
+body.archive .main-navigation li.current_page_item a, 
+body.archive .main-navigation li.current-menu-item a,
+body.single-post .main-navigation li.current_page_item a, 
+body.single-post .main-navigation li.current-menu-item a,
+body.page-id-752 .main-navigation li.current_page_item a, 
+body.page-id-752 .main-navigation li.current-menu-item a,
+body.search .main-navigation li.current_page_item a, 
+body.search .main-navigation li.current-menu-item a  {
+	color: white;
+}
+
+/* FooBars */
+
+.foobar-message {
+	font-family: $din-light;
+	font-size: rem(16);
+	//margin-top: rem(5);
+}
+
+.foobar-teal {
+	color: white;
+}
+
+.foobar-teal a {
+	color: white;
+	font-size: rem(16);
+}
+
+.foobar-teal a:hover {
+	text-decoration: none;
+}
+
+.foobar-container a.button-slate {
+    font-family: $din-light;
+    font-size: rem(16);
+	padding: rem(8) rem(8) rem(5);
+	margin-left: 10px;
+}
+
+.fbppc-merger-notice {
+    color: $zircon;
+    
+    a, a:visited {
+        background: $super-nova;
+        color: $thunder;
+        
+        &:hover {
+            color: white;
+        }
+        
+    }
+    
+}

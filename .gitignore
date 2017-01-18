@@ -1,0 +1,10 @@
+# ignore Editor files
+*.sublime-project
+*.sublime-workspace
+
+# ignore Tool files
+*.codekit
+
+# ignore Cache files
+.sass-cache
+

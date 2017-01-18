@@ -1,0 +1,137 @@
+#{$all-button-inputs},
+.button,
+button,
+%button,
+#tribe-events .tribe-events-button,
+.tribe-events-button  {
+  @include appearance(none);
+  -webkit-font-smoothing: antialiased;
+  background-color: $action-color;
+  border-radius: $base-border-radius;
+  border-radius: 0;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.75em 1em;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+  //white-space: nowrap;
+  text-align: center; 
+  
+  &:hover,
+  &:focus {
+    background-color: $thunder;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
+
+#tribe-events .tribe-events-button, 
+.tribe-events-button {
+    font-size: rem(16);
+    margin-right: $base-spacing;
+    
+    @include media($mobile-up) {
+        font-size: rem(18);
+    }
+}
+
+a.button-slate {
+	background: #4C4C4C;
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+	font-family: $base-font-family;
+    font-size: $base-font-size;
+    font-weight: 600;
+	letter-spacing: em(1);
+	text-decoration: none;
+	text-transform: uppercase;
+    line-height: 1;
+    padding: 0.75em 1em;
+    text-decoration: none;
+    user-select: none;
+    vertical-align: middle;
+    //white-space: nowrap;
+    text-align: center;
+    
+    &:visited {
+        color: #fff;
+    }
+}
+
+a.button-jade {
+	background: #7ea8ad;
+	color: white;
+	display: inline-block;
+	font-family: 'DINWeb-Regular', sans-serif;
+	font-size: rem(20);
+	letter-spacing: .1rem;
+	padding: rem(20) rem(20) rem(17);
+	text-decoration: none;
+	text-transform: uppercase;
+	
+	&:visited {
+    	color: white;
+	}
+}
+
+a.button-pine {
+	background: #27494B;
+	color: white;
+	display: inline-block;
+	font-family: 'DINWeb-Regular', sans-serif;
+	font-size: 2.2rem;
+	letter-spacing: .2rem;
+	padding: 1rem 2rem .7rem;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+
+a.button-slate:hover {
+	color: #F9B800;
+	text-decoration: none;
+}
+
+a.button-jade:hover {
+	color: #f9be00;
+}
+
+.page-seperator a.button-slate {
+	float: right;
+	margin: 1.5rem 0 0;
+}
+
+%button-thunder {
+  color: white;
+  background: $thunder;
+  
+  &:hover {
+    color: $super-nova;
+  }
+}
+
+
+.button {
+  //header
+    &-category-header {
+        @extend %button;
+        @extend %button-thunder;
+        text-transform: uppercase; 
+        font-size: $h4;
+        padding-left: $base-spacing;
+        padding-right: $base-spacing;
+        
+        //position: relative;
+        //top: 50%;
+        //transform: translateY(-50%);
+    }
+}

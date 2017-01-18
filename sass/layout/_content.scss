@@ -1,0 +1,255 @@
+/* =Content
+----------------------------------------------- */
+.site-content {
+	background: white;
+	margin: $base-spacing * 4 auto 0;
+	
+	@include media($mobile-up) {
+    	margin: rem(120) auto 0;
+	}
+}
+
+.single-column-wrap { @include outer-container(); }
+
+.single-column {
+    @include media($tablet-up) {
+        @include span-columns(8);
+        @include shift(2);
+    }
+    
+    .wrap {
+        width: auto;
+    }
+}
+
+.sticky {
+}
+
+.hentry {
+	margin: 0 0 $base-spacing * 3;
+}
+
+/*
+.byline,
+.updated {
+	display: none;
+}
+*/
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 0;
+}
+
+.hero-banner {    
+	background: url('images/Banner.jpg') $green-vouge;
+	background-size: cover;
+    -moz-background-size: cover;  /* Firefox 3.6 */
+    background-position: center; 
+	color: white;
+	overflow: hidden;
+    padding: $base-spacing * 5 0 $base-spacing;
+	margin-top: -$base-spacing * 4;
+	
+	@include media($mobile-up) {
+        margin-top: rem(-126);
+        padding-top: $base-spacing * 6;
+	}
+}
+
+.hero-banner h2,
+.hero-banner h3,
+.hero-banner h3 a {
+	color: white;
+	font-family: "DINWeb-Light", sans-serif;
+	font-size: rem(34);
+	margin:0 0 $base-spacing;
+	text-transform: none;
+	
+	@include media($mobile) {
+    	font-size: rem(25);
+	}
+}
+
+.hero-banner h4 a {
+	color: white;
+}
+
+.hero-banner a {
+	color: #f9be00;
+	font-size: rem(16);
+	letter-spacing: .025rem;
+}
+
+.hero-banner a:hover {
+	color: #dad9d7;
+}
+
+.hero-banner h3 a:hover {
+	color: #f9b800;
+	text-decoration: none;
+}
+
+
+/*
+.single-post #content,
+.single-services #content {
+    margin-top: rem(108);
+	
+	@include media($mobile-up) {
+	    margin-top: rem(135);
+    }
+}
+*/
+
+/* Remove spacing for fixed nav for single blog posts */
+.post .entry-content {
+	margin: 0;
+} 
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+.title-banner {
+    
+    img {
+        display: none;
+        
+        @include media($mobile-up) {
+            display: inline-block;
+            margin: 0 20px 0 0;
+            height: 100px;
+            width: 100px;
+        }
+    }
+    
+	
+	
+}
+
+.title-banner h1 {
+	display: inline-block;
+	font-family: 'DINWeb-Regular', sans-serif;
+	font-size: rem(44);
+	line-height: rem(40);
+	padding-top: rem(10);
+}
+
+.title-banner i {
+	color: #f9be00;
+	border-radius: 50%;
+	display: inline-block;
+	font-size: rem(100);
+	line-height: 100px;
+	margin: 0 rem(25) 0 0;
+	height: 100px;
+	width: 100px;
+	text-align: center;
+}
+
+h1.site-title {
+    margin: 0;
+}
+
+h1.entry-title,
+.tribe-events-single .tribe-events-single-event-title {
+	color: #274748;
+	font-family: 'DINWeb-Regular', sans-serif;
+	font-size: rem(44);
+	letter-spacing: rem(2.5);
+	margin: rem(60) 0 rem(60) 0; 
+	text-transform: uppercase;
+	
+	@include media($mobile) {
+    	font-size: rem(25);
+    	margin: rem(20) 0;
+	}
+}
+
+
+h1.entry-title a {
+	font-family: 'DINWeb-Regular', sans-serif;
+	font-size: rem(44);
+	line-height: rem(44);
+	text-transform: uppercase;
+}
+
+.search h1.entry-title,
+.post h1.entry-title {
+	font-size: rem(44);
+	line-height: rem(44);
+}
+
+h1.page-title, 
+h2.page-title {
+	color: #274748;
+	font-family: 'DINWeb-Regular', sans-serif;
+	font-size: rem(44);
+	letter-spacing: rem(2.5);
+	margin: rem(60) 0 rem(40); 
+	text-transform: uppercase;
+}
+
+.archive-page-header {
+	font-size:rem(22);
+	letter-spacing: rem(2.5);
+	line-height: 1.2;
+	margin: 0;
+}
+
+.archive-page-header h1.page-title {
+	margin: 0 0 3rem;
+	font-family: 'DINWeb-Medium', sans-serif;
+	font-size: rem(22);
+	letter-spacing: rem(2.5);
+}
+
+.content-area .whitepaper-download-form {
+    @include media($mobile) {
+    	margin-top: $base-spacing;
+	}
+}
+
+.entry-author-info {
+    float: left;
+    margin-bottom: $base-spacing;
+    border-bottom: 1px solid $pumice;
+    padding: $small-spacing 0; 
+}
+
+/* How We Think Banner shown at the bottom of content on blog posts */
+.how-we-think-banner {
+    background: $zircon;
+    padding: $base-spacing;
+    margin-bottom: $base-spacing;
+    
+    h1 {
+        font-size: modular-scale(2);
+    }
+    
+    p {
+        margin: 0;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+/* Comments */
+
+.reply {
+    margin-bottom: $base-spacing;
+    
+    a {
+        color: white;
+    }
+}
+

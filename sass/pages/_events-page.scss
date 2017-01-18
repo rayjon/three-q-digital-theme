@@ -1,0 +1,112 @@
+.events-pages {
+    .content-area {
+        @include media($mobile-up) {
+            @include span-columns(7); 
+        }
+    }
+    
+    .sidebar {
+        margin-top: 0;
+        @include media($mobile-up) {
+            @include span-columns(4.5);
+            @include shift(.5);
+        }
+    }
+}
+
+#tribe-events-pg-template {
+   max-width: none;
+   //margin-bottom: $base-spacing * 4;
+   //padding: $base-spacing 0;
+}
+
+.events-header {
+    .entry-title {
+        //margin-bottom: 0;
+    }
+}
+
+.events-list .tribe-events-loop, 
+.single-tribe_organizer .tribe-events-loop, 
+.single-tribe_venue .tribe-events-loop, 
+.tribe-events-day .tribe-events-loop {
+    max-width: none;
+}
+
+.tribe-events-list-separator-month {
+    display: none;
+}
+
+.tribe-events-list .type-tribe_events h2 {
+    letter-spacing: rem(1);
+    text-transform: uppercase;
+}
+
+#tribe-events-content ul.tribe-events-sub-nav {
+    display: none;
+}
+
+.tribe-events-back {
+    display: none;
+}
+
+#tribe-events-content.tribe-events-list {
+    margin-bottom: 0;
+}
+
+.single-tribe_events #tribe-events-header, 
+.tribe-events-map #tribe-events-header {
+    display: none;
+}
+
+/* Correct Font Sizes */
+.tribe-events-loop .tribe-events-event-meta {
+    font-size: inherit;
+}
+
+// Correct Line Heights
+.tribe-events-list .time-details, 
+.tribe-events-list .tribe-events-venue-details {
+    line-height: inherit;
+}
+
+.tribe-events-loop .tribe-events-event-meta {
+    margin-bottom: $base-spacing;
+}
+
+/* Event Date */
+.tribe-events-list .time-details {
+    font-family: $din-medium;
+    margin-bottom: 0;
+}
+
+/* Google Maps Link*/
+.tribe-events-gmap {
+    display: block;   
+}
+
+.single-tribe_events .tribe-events-event-meta {
+    margin: 0;   
+}
+
+.single-tribe_events .tribe-events-cal-links {
+  display: inline-block;
+  zoom: 1;
+  margin: 0 0 $base-spacing * 2;
+  vertical-align: middle;
+}
+
+.tribe-events-meta-group-details {
+    background-color: $zircon;
+    margin-bottom: $base-spacing * 2;
+    padding: $base-spacing;
+}
+
+.tribe-events-meta-group-organizer {
+    @extend .tribe-events-meta-group-details;
+}
+
+.tribe-events-meta-group-venue {
+    @extend .tribe-events-meta-group-details;
+}
+

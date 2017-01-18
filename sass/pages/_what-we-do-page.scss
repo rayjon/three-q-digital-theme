@@ -1,0 +1,138 @@
+.services-hero {
+	background-image: url('images/banner-whatwedo.png');	
+	margin-bottom: $base-spacing;
+	
+	@include media($mobile-up) {
+    	margin-bottom: $base-spacing;
+	}
+}
+
+.clients-hero {
+	background-image: url('images/banner-ourclients.png');
+	min-height: 440px;
+}
+
+.media-hero i,
+.hero-banner .services-icon a i {
+	color: #f9b800;
+	display: block;
+	font-size: rem(200);
+	margin: 0 auto rem(20);
+	text-align: center;
+	
+	@include media($mobile) {
+    	font-size: rem(100);
+    	margin-bottom: rem(10);
+	}
+}
+
+.hero-banner .services-icon a:hover {
+	text-decoration: none;
+}
+
+.hero-banner .services-icon a:hover i {
+	color: white;
+}
+
+.hero-banner blockquote {
+	color: #7ea8ad;
+	font-family: "DINWeb-Light", sans-serif;
+	line-height: 1.2;
+	font-size: rem(34);
+	margin: 0 0 3rem;
+	text-align: right;
+}
+
+.services-icon h4 {
+    margin: 0;
+    
+    @include media($mobile) {
+    	margin-bottom: $base-spacing;
+	}
+}
+
+
+.services-icon h4 a {
+	font-family: "DINWeb-Medium", sans-serif;
+	font-size: rem(22);
+	display: block;
+	text-transform: uppercase;
+	text-align:center;
+}
+
+.services-icon p {
+	font-size: rem(16);
+	padding-top: 0.5rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	text-align:center;
+}
+
+.secondary-services {
+	text-align: center;
+}
+
+.secondary-services h3 a {
+	color: #4C4C4C;
+	font-family: 'DINWeb-Medium', sans-serif;
+	font-size: rem(22);
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.secondary-services a {
+	display: block;
+}
+
+.secondary-services a i {
+	background: #f9be00;
+	border-radius: 50%;
+	color: white;
+	display: inline-block;
+	font-size: 8rem;
+	line-height: 200px;
+	margin: 2rem 0;
+	height: 200px;
+	width: 200px;
+	text-align: center;
+	
+	@include media($mobile) {
+    	background-size: rem(60) rem(60);
+    	font-size: rem(50);
+    	line-height: rem(100);
+    	width: rem(100);
+    	height: rem(100);
+    	margin-bottom: rem(10);
+	}
+}
+
+.secondary-services a:hover i {
+	color: #f9be00;
+	background: #efefef;
+}
+
+.media-hero h4 {
+	text-align: center;
+}
+
+.media-hero h4 a {
+	color: #83AFB4;
+	display: block;
+	font-family: "DINWeb-Medium", sans-serif;
+	font-size: rem(22);
+	letter-spacing: rem(2.5);
+	text-transform: uppercase;
+}
+
+.media-hero a:hover {
+	text-decoration: none;
+}
+
+.media-hero a:hover i {
+	color: white;
+}
+
+.media-hero p {
+	color: #7ea8ad;
+	font-family: "DINWeb-Regular", sans-serif; 
+}
