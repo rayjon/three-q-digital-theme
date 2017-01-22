@@ -13,7 +13,6 @@
 
 get_header(); ?>
 
-<div class="wrap">
 
 <div class="grid-66 mobile-100">
 	<div id="primary" class="content-area">

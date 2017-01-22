@@ -3,6 +3,7 @@
 *.sublime-workspace
 
 # ignore Tool files
+*.codekit3
 *.codekit
 
 # ignore Cache files

@@ -6,7 +6,9 @@
  *
  * @package 3Q Digital
  */
-?><!DOCTYPE html>
+?>
+
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 	<head>
 		<meta name="viewport" content="width=device-width, user-scalable=yes"> 
