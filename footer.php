@@ -62,24 +62,12 @@
 								
 				<div class="grid-33 grid-parent mobile-100">
 					<h2 class="hide-on-mobile">Connect With Us</h2>
-					<a class="social-icon" href="https://twitter.com/3qdigital"><i class="icon-twitter"></i></a>
-					<a class="social-icon" href="https://www.facebook.com/3qdigital"><i class="icon-facebook"></i></a>
-					<a class="social-icon" href="http://www.linkedin.com/company/264114?trk=tyah&trkInfo=tas%3A3q%2Cidx%3A1-2-2"><i class="icon-linkedin"></i></a>
-					<a class="social-icon" href="https://plus.google.com/101796185644140706588" rel="publisher"><i class="icon-google-plus"></i></a>
-					<hr />
-					<div class="grid-100">
-					    <a href="http://www.bizjournals.com/sanfrancisco/gallery/106641?s=image_gallery&img_no=57">
-					        <img class="aligncenter pad-light" src="<?php echo get_template_directory_uri(); ?>/images/fast-100-logo-2014.png">
-					    </a>
-					</div>
-					<div class="grid-50 mobile-grid-50 left-grid">
-						<a href="http://www.inc.com/profile/3q-digital" class="inc-5000-badge">
-							<img class="aligncenter pad-light" src="http://3qdigital.dev/wp-content/themes/three-q-digital/images/3q-inc-5000-badge.png">
-						</a>
-					</div>
-					<div class="grid-50 mobile-grid-40 right-grid mobile-prefix-10">
-    					<a href="http://www.imediaconnection.com/awards/agencyawards2014.aspx?imcid=hp"><img class="aligncenter" src="<?php echo get_template_directory_uri();?>/images/2014-iMedia-AA-finalist-badge.jpg"></a>
-					</div>					
+					<a class="social-icon" href="https://twitter.com/3qdigital"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a class="social-icon" href="https://www.facebook.com/3qdigital"><i class="fa fa-facebook" aria-hidden="true"></i>
+</a>
+					<a class="social-icon" href="http://www.linkedin.com/company/264114?trk=tyah&trkInfo=tas%3A3q%2Cidx%3A1-2-2"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+					<a class="social-icon" href="https://plus.google.com/101796185644140706588" rel="publisher"><i class="fa fa-google-plus" aria-hidden="true"></i>
+</i></a>
 				</div>
 				
 				<div class="clear"></div>
@@ -96,13 +84,13 @@
 			       <div class="copyright">
 			       		COPYRIGHT 2008-2014 3Q DIGITAL.<br/> ALL RIGHTS RESERVED.
 			       		<div class="clear"></div>
-			       		<a href="http://3qdigital.dev/privacy-policy/" title="View Our Privacy Policy">PRIVACY POLICY</a>
+			       		<a href="<?php site_url( '/privacy-policy/'); ?>" title="View Our Privacy Policy">PRIVACY POLICY</a>
 			       </div>
 		       </div>
-		</div><!-- .wrap -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
-</div><!-- .grid-container -->
+		</div>
+	</footer>
+</div>
+</div>
 
 <?php wp_footer(); ?>		
 	</body>	

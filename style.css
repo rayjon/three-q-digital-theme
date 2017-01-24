@@ -1,30 +1,18 @@
 @charset "UTF-8";
 /*
-Theme Name: 3Q Digital Update
-Theme URI: http://underscores.me/
+Theme Name: 3Q Digital Theme
+Theme URI: 3qdigital.raymondjohnson.us
 Author: Raymond Johnson, Andrew Rado
-Author URI: http://raymondcmjohnson.com,andrewrado.com
+Author URI: http://raymondjohnson.us
 Description: A custom theme for the 3Q Digital advertising agency.
 Version: 1.0
 License: GNU General Public License
 License URI: license.txt
 Text Domain: three_q_digital
 Domain Path: /languages/
-Tags:
 
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-
- 3Q Digital is based on Underscores http://underscores.me/, (C) 2012-2013 Automattic, Inc.
-
-Resetting and rebuilding styles have been helped along thanks to the fine work of
-Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
-along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
-and Blueprint http://www.blueprintcss.org/
-
-Resources:
-http://typecast.com/blog/a-more-modern-scale-for-web-typography
-
+GitHub Theme URI: rayjon/three-q-digital-theme
+GitHub Theme URI: https://github.com/rayjon/three-q-digital-theme
 */
 @import url(css/unsemantic-grid-responsive-tablet.css);
 html {
@@ -400,27 +388,32 @@ th {
   src: url("fonts/DINWeb-Light.eot");
   src: url("fonts/DINWeb-Light.woff") format("woff");
   font-weight: normal; }
+
 @font-face {
   font-family: DINWeb-Regular;
   src: url("fonts/DINWeb.eot");
   src: url("fonts/DINWeb.eot?") format("eot");
   src: url("fonts/DINWeb.woff") format("woff");
   font-weight: normal; }
+
 @font-face {
   font-family: DINWeb-Medium;
   src: url("fonts/DINWeb-Medium.eot");
   src: url("fonts/DINWeb-Medium.woff") format("woff"); }
+
 @font-face {
   font-family: DINWeb-Bold;
   src: url("fonts/DINWeb-Bold.eot");
   src: url("fonts/DINWeb-Bold.eot?") format("eot");
   src: url("fonts/DINWeb-Bold.woff") format("woff"); }
+
 @font-face {
   font-family: 'three-q-digital-icons';
   src: url("fonts/three-q-digital-icons.eot");
   src: url("fonts/three-q-digital-icons.eot?#iefix") format("embedded-opentype"), url("fonts/three-q-digital-icons.woff") format("woff"), url("fonts/three-q-digital-icons.ttf") format("truetype"), url("fonts/three-q-digital-icons.svg#three-q-digital-icons") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 /* darker gold for text links */
 /* dark teal */
 button, input[type="button"], input[type="reset"], input[type="submit"],
@@ -547,7 +540,7 @@ a.button-jade:hover {
   padding-right: 1.5rem; }
 
 fieldset {
-  background-color: #e2e2e2;
+  background-color: #e2e1e1;
   border: 1px solid #C8C8C8;
   margin: 0 0 0.75rem;
   padding: 1.5rem; }
@@ -590,7 +583,7 @@ textarea {
   input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, textarea:hover,
   select[multiple=multiple]:hover,
   textarea:hover {
-    border-color: #afafaf; }
+    border-color: #afaeae; }
   input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, textarea:focus,
   select[multiple=multiple]:focus,
   textarea:focus {
@@ -1413,6 +1406,7 @@ body.search .main-navigation li.current-menu-item a {
     position: absolute;
     right: 31px;
     top: -20px; } }
+
 @media screen and (max-width: 48rem) {
   #site-navigation .menu-top-level-container {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); } }
@@ -1468,6 +1462,7 @@ h1.menu-toggle {
     margin-left: 16.9675090253%; }
     .single-column:last-child {
       margin-right: 0; } }
+
 .single-column .wrap {
   width: auto; }
 
@@ -1838,6 +1833,7 @@ a.pinterest i {
   width: 49.0974729242%; }
   .site-footer .mobile-marketing-badge:last-child {
     margin-right: 0; }
+
 .site-footer .doubleclick-html5-badge {
   margin: 0.75rem 0;
   float: left;
@@ -1883,6 +1879,7 @@ footer#colophon .copyright a:hover {
 ----------------------------------------------- */
 .archive .site-content {
   margin-top: 9rem; }
+
 @media screen and (min-width: 42.5rem) {
   .archive .content-area {
     float: left;
@@ -1891,6 +1888,7 @@ footer#colophon .copyright a:hover {
     width: 57.5812274368%; }
     .archive .content-area:last-child {
       margin-right: 0; } }
+
 @media screen and (min-width: 42.5rem) {
   .archive .sidebar {
     float: left;
@@ -1906,6 +1904,7 @@ footer#colophon .copyright a:hover {
   @media screen and (min-width: 42.5rem) {
     .category .site-content {
       margin-top: 7.5rem; } }
+
 .category .content-area,
 .category .sidebar {
   margin-top: 3rem; }
@@ -2503,12 +2502,12 @@ p.comment-form-url label {
   color: #264649;
   font-family: 'DINWeb-Light', sans-serif;
   font-size: 1.875rem;
-  margin: 0; }
+  margin: 0.5em 0 0; }
 
 /*----------------------------------------------*/
 .home-services {
   background: white;
-  padding: 0 0 3.125rem;
+  padding: 4em 0 3.125rem;
   overflow: hidden; }
 
 .home-services h2 {
@@ -3086,6 +3085,9 @@ div[id^="inline"] {
     .mobile-service-badges .badge img {
       max-height: 100%; }
 
+.single-services .title-banner {
+  padding: 4em 0 1em; }
+
 .single-services .title-banner h1 {
   padding: 0;
   line-height: 6.5625rem;
@@ -3238,6 +3240,7 @@ body .fancybox-title-float-wrap {
   .page-seperator img {
     width: 5rem;
     height: 5rem; } }
+
 .how-we-think-nav {
   list-style: none; }
 
@@ -3262,8 +3265,10 @@ body .fancybox-title-float-wrap {
     list-style-type: none;
     padding: 0px;
     margin: 0px; } }
+
 ul.large li {
   margin-bottom: 1.125rem; }
+
 ul.large a {
   background-image: url("images/link-outbound-icon.svg");
   background-repeat: no-repeat;
@@ -3272,6 +3277,7 @@ ul.large a {
   display: block; }
   ul.large a:hover {
     color: #FCB63E; }
+
 ul.large img {
   padding: 0.3125rem 0 0 2.1875rem; }
 
@@ -3507,18 +3513,22 @@ footer#colophon .hirepower-award img {
   .landing-hero {
     margin: -16rem 0 2rem;
     padding: 18rem 0 2rem; } }
+
 /*=========================================
     CMO Page
 =========================================*/
 /* Site Header */
 .page-cmo .site-header {
   background: #4C4C4C; }
+
 .page-cmo .site-branding a {
   background-image: url("images/3qhh-logo-white.svg"); }
+
 .page-cmo .main-navigation > div > ul > li > a {
   color: white; }
   .page-cmo .main-navigation > div > ul > li > a:hover {
     color: #FCB63E; }
+
 .page-cmo .main-navigation li.menu-item-has-children a:hover {
   color: white; }
 
@@ -3643,6 +3653,7 @@ footer#colophon .hirepower-award img {
     width: 57.5812274368%; }
     .events-pages .content-area:last-child {
       margin-right: 0; } }
+
 .events-pages .sidebar {
   margin-top: 0; }
   @media screen and (min-width: 42.5rem) {
@@ -3724,258 +3735,195 @@ footer#colophon .hirepower-award img {
     background: #28464A;
     position: absolute;
     /* min-width: initial; */ }
-
   .blog-header .large-icon {
     margin-right: 1rem;
     font-size: 90px;
     line-height: 100px; }
-
   .location img {
     width: 60%;
     margin: 0; } }
+
 /* End Tablet Styling */
 /* Styling for Phones */
 @media only screen and (max-width: 568px), only screen and (max-device-width: 568px) {
   .fast-100-banner h3 {
     font-size: 0.875em; }
-
   .fast-100-banner a {
     font-size: 0.75em; }
-
   #masthead {
     background: #28464A;
     min-width: initial;
     width: 100%; }
-
   #masthead .wrap {
     min-width: initial; }
-
   .button-container {
     text-align: left; }
-
   .blog-header .large-icon {
     margin-right: 1rem;
     font-size: 90px;
     line-height: 100px; }
-
   .location img {
     width: 60%;
     margin: 0; }
-
   /* Home Page */
   .home-main h3 {
     display: inline-block;
     margin: 0; }
-
   .home-main h3 a {
     color: #F9B800;
     display: block;
     line-height: 1.2rem;
     margin: 0; }
-
   .home-main h3 a:hover {
     color: #79A5A9; }
-
   .home-call-to-action {
     margin-bottom: 2.5rem; }
-
   a.service-icon i:hover {
     color: #f9b800;
     background: none; }
-
   .services-icon p,
   .home-services p {
     display: none; }
-
   .sidebar {
     margin: 0 0 4rem; }
-
   .whitepaper-download-form label[for=Position__c] {
     display: inline-block; }
-
   .secondary-services p {
     display: none; }
-
   .secondary-services a {
     text-align: center; }
-
   .title-banner i {
     display: none; }
-
   /* How We Think */
   .page-template-how-we-think-page-php .section-title {
     margin-bottom: 1rem; }
-
   ul.large li {
     clear: both; }
-
   #content .hero-banner #mc_embed_signup {
     margin: 1rem 0; }
-
   .page-seperator {
     margin-bottom: 2rem;
     padding: 2rem 0; }
-
   .anchor {
     margin: 0;
     padding: 0; }
-
   .core-values {
     margin: 0; }
-
   .mobile-exec-staff-grid {
     list-style: none;
     margin: 0; }
-
   .mobile-exec-staff-grid li img {
     float: left;
     margin: 0 1rem 0 0; }
-
   .mobile-exec-staff-grid li h2 {
     display: none; }
-
   .mobile-exec-staff-grid li h3 span {
     font-family: 'DINWeb-Medium', sans-serif; }
-
   .staff-grid li {
     height: 60px;
     width: 60px; }
-
   /* Clients Page */
   .hero-banner a.button-jade {
     display: table;
     font-size: 1.6rem;
     margin: 0 0 2rem; }
-
   .clients a {
     padding: 0;
     min-height: 100px; }
-
   .testimonial {
     margin-bottom: 2rem; }
-
   .testimonial blockquote p {
     font-size: 1.25rem;
     letter-spacing: 0.15625rem; }
-
   .testimonial h3 {
     font-size: 1rem; }
-
   /* Blog Page */
   .blog-header h3 {
     border-bottom: 1px solid #c9c9c9;
     margin: 1.25rem 0 0;
     font-size: 1rem;
     padding: 0 0 1.25rem; }
-
   .blog-post-summary {
     margin: 1.25rem 0; }
-
   .blog-post-summary img {
     float: left;
     margin-right: 0.625rem;
     position: relative;
     width: 80px;
     height: 80px; }
-
   .blog-post-summary h3 {
     clear: none;
     margin: 0 0 0 5.625rem; }
-
   .blog-post-summary h3 a {
     font-size: 1.25rem;
     letter-spacing: 1px;
     margin: 0; }
-
   .blog-post-summary a {
     font-size: 0.875rem;
     margin-left: 5.625rem;
     display: block; }
-
   .entry-meta a {
     margin: 0;
     display: inline; }
-
   .entry-meta .post-meta {
     padding: 0.4375rem 0 0.3125rem; }
-
   .IN-widget {
     padding: 0 0.625rem; }
-
   .mobile-search {
     margin: -1.25rem 0 1.875rem; }
-
   h3.widget-title {
     text-transform: none; }
-
   .blog-categories a {
     font-family: 'DINWeb-Regular', sans-serif; }
-
   /*
-  	.single-post #content, 
-  	.single-services #content, 
-  	.entry-content {
-  		margin-top: rem(13); 
-  	}
-  */
+	.single-post #content, 
+	.single-services #content, 
+	.entry-content {
+		margin-top: rem(13); 
+	}
+*/
   .entry-content {
     margin-top: 1.25rem; }
-
   .sharing-buttons {
     float: none; }
-
   .location {
     margin-bottom: 1.25rem;
     overflow: auto; }
-
   .location img {
     width: 100%; }
-
   .location h3 br {
     display: none; }
-
   .contact-form textarea,
   .whitepaper-download-form textarea {
     display: block;
     font-size: 1rem;
     padding: 0.3125rem 0.3125rem 0 0.625rem;
     width: 95%; }
-
   .hirepower-banner hr {
     margin: 0 0 1.25rem; }
-
   .hirepower-banner .logo img {
     margin: 0 auto 1.25rem; }
-
   /*** MOBILE FOOTER ***/
   /*** Mobile Footer Layout ***/
   footer#colophon {
     border: none; }
-
   footer#colophon .mobile-grid-50 {
     padding-left: 0; }
-
   footer#colophon hr {
     background-color: #c8c8c8; }
-
   /*** Mobile Footer Menu ***/
   footer#colophon ul#menu-top-level-1 li {
     display: inline-block; }
-
   footer#colophon ul#menu-top-level-1 li:after {
     content: " • ";
     color: #4c4c4c; }
-
   footer#colophon ul#menu-top-level-1 li:last-child:after {
     content: none; }
-
   footer#colophon ul#menu-top-level-1 li a {
     margin: 0; }
-
   /**** Mobile Footer Social Icons ***/
   footer#colophon a.social-icon {
     margin-bottom: 0; }
-
   /*** Mobile Footer MailChimp Subscription ***/
   footer#colophon #mc_embed_signup {
     border: 1px solid #c8c8c8;
@@ -3983,40 +3931,32 @@ footer#colophon .hirepower-award img {
     clear: both;
     padding: 1.25rem 0;
     margin: 1.25rem 0; }
-
   /* Mobile Footer Copyright ***/
   footer#colophon .copyright {
     text-align: left; }
-
   footer#colophon .copyright br {
     display: block; }
-
   /*** Mobile Contact-Us Page ***/
   .contact-logo {
     margin: 0px 8px 0 0;
     width: 28px;
     height: 28px; } }
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
   #masthead {
     padding: 0; }
-
   .site-branding a {
     background-size: 80px 60px;
     padding: 20px 100px; }
-
   h1.menu-toggle {
     margin-top: 0.5rem; }
-
   h1.menu-toggle svg {
     width: 22px;
     height: 22px; }
-
   .home-main {
     padding: 3.125rem 0 1.875rem; }
-
   .main-navigation {
     margin: 2.8125rem -3% 0; }
-
   .main-navigation ul {
     padding: 0.625rem; } }
 
