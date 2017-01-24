@@ -8,7 +8,7 @@
 			<i class="three-q-icon-XQ_Icon large-icon"></i>
 		</div>
 		<div class="about-blog">
-			<h3><a href="http://3qdigital.dev/about-blog/" title="About the 3Q Blog">#supercharge</a> your digital marketing knowledge.</h3>
+			<h3><a href="<?php echo site_url('/about-blog/'); ?>" title="About the 3Q Blog">#supercharge</a> your digital marketing knowledge.</h3>
 		</div>
 		<div class="search-area">
 			<?php include (TEMPLATEPATH . '/searchform.php'); ?>	
@@ -95,7 +95,5 @@ $blog_posts = new WP_Query( $args );
 </div><!-- .wrap -->
 
 <div class="clear"></div>
-
-<?php echo do_shortcode("[fast-100-banner]"); ?>
 
 <?php get_footer(); ?>

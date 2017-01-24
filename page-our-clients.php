@@ -1,12 +1,11 @@
 <?php get_header(); ?>
 
-
 	<div class="hero-banner clients-hero">
 		<div class="wrap">
 			<div class="grid-55 mobile-grid-100 left-grid">
 				<h3>We've supercharged growth for all types of partners: eCommerce, B2B, lead gen, EDU, private sale, and more. We like big ideas as much as&nbsp;we like big brands (though we&rsquo;ve helped many of the former grow into the latter).</h3>
 				<h3>Here are some of the companies we&rsquo;re proud to call clients.</h3>
-				<a class="button-jade hide-on-desktop" href="http://3qdigital.raymondcmjohnson.com/contact/">Become a Client</a>
+				<a class="button-jade hide-on-desktop" href="<?php echo site_url('/contact/') ?>">Become a Client</a>
 			</div>
 			<div class="grid-45 right-grid hide-on-mobile">
 				<blockquote>"I've worked with 3Q Digital at multiple companies because I really value their commitment to client service. They've been a great partner and a secret weapon for our marketing team."<br/>- Loretta Jones, Insightly
@@ -15,57 +14,14 @@
 			</div>
 		</div>
 	</div>
-
-	<?php echo do_shortcode ('[fast-100-banner]'); ?>
-
-	<div class="page-seperator">
-		<div class="wrap">
-			<div class="grid-66 grid-parent">
-				<i class="three-q-icon-IA_Icon"></i>
-				<h2>Select Client List</h2>
-			</div>
-	        <div class="grid-33 right-grid">
-				<a class="button-slate hide-on-mobile" href="http://3qdigital.com/contact/">Press to #supercharge.</a>
-			</div>
-		</div>
-	</div>
-
-	<div class="client-grid">
-		<div class="wrap">
-			<?php
-			$client_args = array( 'post_type' => 'client', 'nopaging' => true);
-			$client_loop = new WP_Query( $client_args );
-			$clear_counter = 1;
-			while ( $client_loop->have_posts() ) : $client_loop->the_post(); 
-				if ( !(get_field( 'alumni_display' ) ) ) {
-				?>
-					<div class="grid-20 mobile-grid-50">
-						<a href="<?php the_field( 'client_website' ) ?>"><?php the_post_thumbnail( 'full' ) ?></a>
-					</div>
-					
-					<?php 
-					if ( ($clear_counter % 5) == 0 ) { 
-						$clear_counter++;
-					?>
-						<div class="clear hide-on-mobile"></div>
-					<?php
-					} else {
-						$clear_counter++;
-					}							
-				}
-			endwhile; 
-			wp_reset_query();
-			?>
-		</div>
-	</div>
 	
 	<div class="clear"></div>
 	
 	<div class="page-seperator">
 		<div class="wrap">
 			<div class="grid-66 grid-parent">
-				<img class="alignleft" src="http://3qdigital.com/wp-content/themes/three-q-digital/images/mortarboard-icon-400px.png">
-				<h2>Client Alumni</h2>
+				<img class="alignleft" src="<?php echo get_stylesheet_directory_uri(); ?>/images/mortarboard-icon-400px.png">
+				<h2>Our Clients</h2>
 			</div>
 	        <div class="grid-33 right-grid">
 				<!-- <a class="button-slate hide-on-mobile" href="http://3qdigital.com/contact/">Become a Client</a> -->
@@ -78,6 +34,8 @@
 			
 			<?php
 			/* The variables from the previous query are being used as loop argruments*/
+			$client_args = array( 'post_type' => 'client', 'nopaging' => true);
+			$client_loop = new WP_Query( $client_args );
 			$clear_counter = 1;
 			while ( $client_loop->have_posts() ) : $client_loop->the_post(); 
 				if ( get_field( 'alumni_display' )  ) {

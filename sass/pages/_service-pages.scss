@@ -16,11 +16,18 @@
     }
 }
 
-.single-services .title-banner h1 {
-	padding: 0;
-	line-height: rem(105);
-	margin: 0;
-	overflow: auto;
+.single-services {
+	
+	.title-banner {
+		padding: 4em 0 1em;
+	}
+
+	.title-banner h1 {
+		padding: 0;
+		line-height: rem(105);
+		margin: 0;
+		overflow: auto;
+	}
 }
 
 .image-gallery {
