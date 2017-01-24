@@ -235,7 +235,7 @@ function three_q_digital_scripts() {
 	wp_enqueue_script( 'three_q_digital-parsley', get_template_directory_uri() . '/js/parsley.min.js', array( 'jquery' ), '1.0' );
 	
 	/* GA - Salesforce */
-	// wp_enqueue_script( 'three_q_digital_ga_salesforce', get_template_directory_uri() . '/js/ga-salesforce.js', array(), '1.0', true );
+	/* wp_enqueue_script( 'three_q_digital_ga_salesforce', get_template_directory_uri() . '/js/ga-salesforce.js', array(), '1.0', true ); */
 	
 	/*  jQuery Cookie - https://github.com/carhartl/jquery-cookie */
 	wp_enqueue_script( 'three_q_digital_jQuery_cookie', get_template_directory_uri() . '/js/jquery.cookie.js', array( 'jquery' ), '1.0' );
