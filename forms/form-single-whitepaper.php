@@ -35,7 +35,7 @@ $label = $field['choices'][ $value ];
 		<input id="Visitor_ID__c" name="Visitor_ID__c" type="hidden" value="" />
 
          <!-- ActOn Form Capture - Sends form data to ActOn -->
-        <script type="text/javascript">
+        <!-- <script type="text/javascript">
             var aoProtocol = location.protocol;
             if ( aoProtocol.indexOf('http') < 0 ) aoProtocol = 'http:';
                 var aoCAP = {
@@ -47,7 +47,7 @@ $label = $field['choices'][ $value ];
                 protocol: aoProtocol
             };
             document.write( '<script type="text/javascript" src="'+aoCAP.protocol+'//'+aoCAP.server+'/acton/js/formcap.min.js"><'+'/script>' );
-        </script>
+        </script> -->
 
         <?php 
         if( wp_is_mobile() == TRUE ) {

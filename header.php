@@ -20,9 +20,8 @@
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 		<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		<script src="https://apis.google.com/js/plusone.js"></script>
-		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script> <!-- Google Maps API -->
+		<!-- <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script> --> <!-- Google Maps API -->
 
 <!-- Google Analytics Verification -->
 		<script>

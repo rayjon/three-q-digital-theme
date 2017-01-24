@@ -235,7 +235,7 @@ function three_q_digital_scripts() {
 	wp_enqueue_script( 'three_q_digital-parsley', get_template_directory_uri() . '/js/parsley.min.js', array( 'jquery' ), '1.0' );
 	
 	/* GA - Salesforce */
-	wp_enqueue_script( 'three_q_digital_ga_salesforce', get_template_directory_uri() . '/js/ga-salesforce.js', array(), '1.0', true );
+	// wp_enqueue_script( 'three_q_digital_ga_salesforce', get_template_directory_uri() . '/js/ga-salesforce.js', array(), '1.0', true );
 	
 	/*  jQuery Cookie - https://github.com/carhartl/jquery-cookie */
 	wp_enqueue_script( 'three_q_digital_jQuery_cookie', get_template_directory_uri() . '/js/jquery.cookie.js', array( 'jquery' ), '1.0' );
@@ -246,7 +246,7 @@ function three_q_digital_scripts() {
 	wp_enqueue_style( 'three_q_digital-fancybox-style', get_template_directory_uri() . '/css/jquery.fancybox.css' );
 
 	/* Font Awesome Icon Font */
-	wp_enqueue_style('three_q_digital_font_awesome', '//opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css', array(), null, true);
+	wp_enqueue_style('three_q_digital_font_awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 	
 	wp_enqueue_script( 'three_q_digital-modernizer', get_template_directory_uri() . '/js/modernizr.custom.js', array(), '1.0' );
 

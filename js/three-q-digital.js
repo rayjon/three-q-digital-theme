@@ -6,7 +6,6 @@ function reverseGeolocation() {
     if ( navigator.geolocation ) {
         var myLocation;
         function getLocation( position ) {
-            /* Geolocation Available */
             myLocation = {
             "lat": position.coords.latitude, 
             "lng": position.coords.longitude
@@ -17,7 +16,6 @@ function reverseGeolocation() {
         };
         navigator.geolocation.getCurrentPosition(getLocation);
     } else {
-        /* Geolocation Unavailable */
         return;
     }
 }
@@ -37,7 +35,7 @@ function codeLatLng( lattitude, longitude ) {
     });
 }
 
-jQuery( document ).ready( reverseGeolocation );
+// jQuery( document ).ready( reverseGeolocation );
 
 /*********************************************************** 
 *  Save Data Function
@@ -225,8 +223,6 @@ jQuery(document).ready(function() {
     	});
     });
 });
-
-console.log('clicked');
 
 jQuery(document).ready(function() {	
     jQuery('#banner-gallery').click(function() {
