@@ -4,7 +4,7 @@
 
 	<form data-parsley-validate action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"  id="idForm" onsubmit="save_data()" autocomplete="on" method="post" name="whitepaper-download">
         <header>
-		    <h3>Download Our Whitepapers<img src="http://3qdigital.com/wp-content/themes/three-q-digital/images/whitepaper-icon.png"></h3>  
+		    <h3>Download Our Whitepapers<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/whitepaper-icon.png"></h3>  
 		</header> 
 		<input type="hidden" name="retURL" value="<?php echo get_site_url(); ?>/whitepaper-download-thank-you" />
 		<input type="hidden" name="oid" value="00DU0000000IE43MAG" />

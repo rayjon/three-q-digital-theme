@@ -1,39 +1,44 @@
 <?php get_header(); ?>
 
-
 <div class="home-testimonial">
 	<blockquote class="aligncenter">"Customers will never love a company until the employees love it first."</blockquote>
 </div>
-<img class="aligncenter" src="http://3qdigital.com/wp-content/uploads/2014/11/group-culture-banner.png"/>
 
+<img class="aligncenter" src="<?php echo get_stylesheet_directory_uri(); ?>/images/group-culture-banner.jpg">
 
 <br/>
+
 <div class="wrap">
-		<br/>
-		<div class="grid-33 left-grid">
-			<div class="leading-text aligncenter">We push, support, motivate, and inspire each other.</div>
-			
+	<br/>
+
+	<div class="grid-33 left-grid">
+		<div class="leading-text aligncenter">We push, support, motivate, and inspire each other.</div>
+		
+	</div>
+
+	<div class="grid-33">
+		<div class="leading-text aligncenter">The word <a href="http://3qdigital.com/who-we-are/">&ldquo;team&rdquo;</a> means everything to us.
 		</div>
-		<div class="grid-33">
-			<div class="leading-text aligncenter">The word <a href="http://3qdigital.com/who-we-are/">&ldquo;team&rdquo;</a> means everything to us.
-			</div>
+	</div>
+
+	<div class="grid-33 right-grid">
+		<div class="leading-text aligncenter">We track happiness:<br/><span class="pop-out-text">8.2</span> out of 10 and rising.
 		</div>
-		<div class="grid-33 right-grid">
-			<div class="leading-text aligncenter">We track happiness:<br/><span class="pop-out-text">8.2</span> out of 10 and rising.
-			</div>
-		</div>
+	</div>
 </div>
 
-<img class="aligncenter" src="http://3qdigital.com/wp-content/uploads/2014/11/office-culture-banner.jpg">
+<img class="aligncenter" src="<?php echo get_stylesheet_directory_uri(); ?>/images/office-culture-banner.jpg">
+
 <div class="wrap">
 	<div class="leading-text grid-100 grid-parent">
 		<br/>Office happy hours, a flexible work-from-home policy, company retreats, and lunch seminars are all part of our employees' balanced work life (the result? <a href="http://adage.com/article/news/places-work-2014/295821/#3QDigital">#14 on AdAge's Best Places to Work list</a>). We have a dedicated VP of People to make sure we're all heard and respected. Our five awesome offices all decide their own perks. We <a href="http://www.breakthroughsf.org/thank-you-3q-digital">actively support our local communities</a>. Ultimately, though, it's the teamwork, collaboration, and shared desire for personal growth and client success that defines our culture. Want the whole story? Read CEO David Rodnitzky's <a href="http://3qdigital.com/featured/3q-culture-manifesto/">Culture Manifesto.</a>
 	</div>
-</div><!-- End Wrap -->
+</div>
 
-<img class="aligncenter" src="http://3qdigital.com/wp-content/uploads/2014/11/super-3q-banner.png">
+<img class="aligncenter" src="<?php echo get_stylesheet_directory_uri(); ?>/images/super-3q-banner.jpg">
+
 <div class="home-testimonial">
-	<blockquote class="aligncenter">Our culture fuels <a href="http://3qdigital/our-clients/">our clients’</a> growth.</blockquote>
+	<blockquote class="aligncenter">Our culture fuels <a href="<?php site_url('/our-clients/')?>">our clients’</a> growth.</blockquote>
 </div>
 
 <br/>
@@ -62,7 +67,5 @@
 	</div>
 	<br/>
 </div>	
-	
-</div>
 
 <?php get_footer(); ?>

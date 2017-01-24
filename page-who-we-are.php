@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="hero-banner who-we-are-hero">
+<section class="hero-banner who-we-are-hero">
 	<div class="wrap">
 		<div class="who-we-are-brand-icons">
 			<div class="grid-55 left-grid">
@@ -30,9 +30,7 @@
 			</div>
 		</div>
 	</div>
-</div>
-
-<?php echo do_shortcode("[fast-100-banner]"); ?>
+</section>
 
 <div class="wrap">
 	<div class="hide-on-mobile">
@@ -141,12 +139,6 @@
     				<div class="staff-caption">
                         <h3><?php the_title(); ?></h3>
                         <span class="job-title"><?php the_field('job_title'); ?></span>
-                        <span>
-                            <?php $author_ID = get_the_author_meta('ID'); ?>
-                            <?php if (count_user_posts($author_ID)) { ?>
-            				    <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">VIEW POSTS >></a>
-                            <?php } ?>
-                        </span>
     				</div>
     			</li>
     		<?php endwhile; ?>
@@ -155,39 +147,6 @@
     	</ul>
     	<hr/>
     	    	
-    	<section class="staff-morale-associates">
-        	<header>
-            	<h1>Morale Associates</h1>
-        	</header>
-        	<ul>
-            	<?php 
-                $morale_associates_args = array( 
-    			    'post_type' => 'staff',
-    			    'department' => 'morale-associates',
-    			    'orderby' => 'menu_order',
-    			    'order' => 'ASC',
-                    'nopaging' => 1,
-                );
-    		    		
-                $morale_associtaes_staff = new WP_Query( $morale_associates_args );
-                rewind_posts();
-    		
-                if ( $morale_associtaes_staff->have_posts() ) : while ( $morale_associtaes_staff->have_posts() ) : $morale_associtaes_staff->the_post();
-                ?>
-    			
-        			<li>
-        				<?php the_post_thumbnail( 'thumbnail' ); ?>
-        				
-        				<div class="staff-info">
-        					<h3><?php the_title(); ?></h3>
-        					<p><?php the_field('job_title'); ?></p>
-        				</div>
-        			</li>
-                <?php endwhile; ?>
-                <?php endif; ?>
-                <?php wp_reset_query(); ?>
-        	</ul>
-    	</section>
 	</div><!--End Hide on Mobile -->
 </div>
 
@@ -296,7 +255,7 @@
 		</div>
 		
 		<div class="grid-35 grid-parent">
-			<a class="button-jade alignright" href="http://3qdigital.com/contact/">SUPERCHARGE YOUR GROWTH</a>
+			<a class="button-jade alignright" href="<?php echo site_url('/contact/'); ?>">SUPERCHARGE YOUR GROWTH</a>
 		</div>
 	</div>
 </div>
