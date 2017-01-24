@@ -20,7 +20,6 @@ jQuery( document ).ready( function() {
         localStorage.customUserId = randomHex(4) + "-" + randomHex(4) + "-" + randomHex(4) + "-" +  randomHex(4);
     }
     
-    console.log( localStorage.customUserId );
     ga('create', 'UA-43522254-1', {'userId': localStorage.customUserId});   // If "User ID" feature is available
     ga('require', 'displayfeatures');
     ga('set', 'dimension1', localStorage.customUserId);                   // Set a `customUserId` dimension at page level
